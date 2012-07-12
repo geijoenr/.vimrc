@@ -4,14 +4,14 @@
 "" Look & Feel & Formatting
 ""---------------------------------------------------------------------------- 
 set ls=2
-set tabstop=4 expandtab
+set tabstop=8
 set shiftwidth=4
 set showmatch
 set nocompatible
 set background=dark
 syntax on
-colorscheme darkblue
-set guifont=Dejavu\ Sans\ Mono\ Bold\ 8
+colorscheme peachpuff
+set guifont=Liberation\ Mono\ Regular\ 8
 set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
 "              | | | | |  |   |      |  |     |    |
 "              | | | | |  |   |      |  |     |    + current 
@@ -29,6 +29,7 @@ set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
 "              +-- full path to file in the buffer
 set lines=50
 set columns=90
+let c_space_errors = 1
 ""-----------------------------------------------------------------------------
 "" Code Completion (need tags installed in ~/.vimrc/ & onmnifuc plugin) 
 ""-----------------------------------------------------------------------------
